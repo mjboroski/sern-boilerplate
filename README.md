@@ -4,6 +4,7 @@ Simple Full-Stack Javascript boilerplate for Express, Sequilize, Postgresql, Rea
 
 ### Technologies Used
 
+  * Axios
   * NodeJS
   * NPM
   * Express
@@ -18,3 +19,8 @@ Simple Full-Stack Javascript boilerplate for Express, Sequilize, Postgresql, Rea
   * PostgreSQL
   
 ### Getting Started
+
+```
+npm install
+npm start
+````

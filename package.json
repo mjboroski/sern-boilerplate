@@ -2,9 +2,10 @@
   "name": "sern-boilerplate",
   "version": "1.0.0",
   "description": "SERN Boilerplate",
-  "main": "index.js",
+  "main": "server/index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon ./server/index.js"
   },
   "repository": {
     "type": "git",
@@ -20,6 +21,7 @@
     "axios": "^0.18.0",
     "body-parser": "^1.18.2",
     "express": "^4.16.3",
+    "passport": "^0.4.0",
     "path": "^0.12.7",
     "pg": "^7.4.1",
     "react": "^16.3.1",
@@ -34,6 +36,7 @@
     "babel-loader": "^7.1.4",
     "babel-preset-env": "^1.6.1",
     "babel-preset-react": "^6.24.1",
+    "nodemon": "^1.17.3",
     "webpack": "^4.5.0"
   }
 }
