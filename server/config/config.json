@@ -1,4 +1,3 @@
-// TODO: test config
 {
   "development": {
     "username": "",
@@ -19,3 +18,5 @@
     "use_env_variable": "DATABASE_URL"
   }
 }
+
+// TODO: test config
