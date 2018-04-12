@@ -3,7 +3,7 @@
     "username": "",
     "password": "",
     "database": "sern_development",
-    "host": "127.0.0.1",
+    "host": "localhost",
     "port": "5432",
     "dialect": "postgres"
   },
@@ -11,12 +11,10 @@
     "username": "",
     "password": "",
     "database": "sern_test",
-    "host": "127.0.0.1",
+    "host": "localhost",
     "dialect": "postgres"
   },
   "production": {
-    "use_env_variable": "DATABASE_URL"
+    "use_env_variable": ""
   }
 }
-
-// TODO: test config
