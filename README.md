@@ -13,6 +13,7 @@ Simple Full-Stack Javascript boilerplate for Sequelize (Postgresql), Express, Re
   * React
   * Redux
   * Passport
+  * Nanoid
   * Nodemon
   * Sequelize
   * Sequelize-CLI
