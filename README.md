@@ -1,6 +1,6 @@
 # SERN Boilerplate
 
-Simple Full-Stack Javascript boilerplate for Sequelize (Postgresql), Express, React, and Node.js based applications.
+Full-Stack boilerplate for Sequelize (PostgreSQL), Express, React, and Node.js based applications.
 
 ### Technologies Used
 
