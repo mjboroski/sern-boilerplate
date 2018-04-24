@@ -1,33 +1,38 @@
 const path = require('path');
-const SRC = path.join(__dirname, '/client');
-const DIST = path.join(__dirname, '/server/dist');
 
 module.exports = {
-  entry: `${SRC}/main.jsx`,
+  context: __dirname,
+  entry: './js/ClientApp.jsx',
+  //get rid of source maps for production
+  devtool: 'cheap-eval-source-map',
   output: {
-    filename: 'bundle.js',
-    path: DIST
+    path: path.join(__dirname, 'public'),
+    filename: 'bundle.js'
+  },
+  devServer: {
+    publicPath: '/public/',
+    historyApiFallback: true
+  },
+  resolve: {
+    extensions: ['.js', '.jsx', '.json']
+  },
+  stats: {
+    colors: true,
+    reasons: true,
+    chunks: true
   },
   module: {
     rules: [
       {
-        test: /\.jsx?/,
-        include: SRC,
-        use: ['babel-loader']
+        enforce: 'pre',
+        test: /\.jsx?$/,
+        loader: 'eslint-loader',
+        exclude: /node_modules/
       },
       {
-        test: /\.css$/,
-        use: ['style-loader', 'css-loader'],
-      },
-      {
-        test: /\.(png|jpg)$/,
-        use: ['file-loader'],
-      },
-    ],
-  },
-  resolve: {
-    modules: [
-      path.join(__dirname, 'node_modules'),
-    ],
-  },
+        test: /\.jsx?$/,
+        loader: 'babel-loader'
+      }
+    ]
+  }
 };
