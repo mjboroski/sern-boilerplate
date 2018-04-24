@@ -2,7 +2,7 @@ const path = require('path');
 
 module.exports = {
   context: __dirname,
-  entry: './js/ClientApp.jsx',
+  entry: './client/app/main.jsx',
   //get rid of source maps for production
   devtool: 'cheap-eval-source-map',
   output: {
@@ -26,7 +26,7 @@ module.exports = {
       {
         enforce: 'pre',
         test: /\.jsx?$/,
-        loader: 'eslint-loader',
+        // loader: 'eslint-loader',
         exclude: /node_modules/
       },
       {
